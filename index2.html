@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 스타일링 반원과 삼각형 */
+        .cone-wrapper {
+            position: relative;
+            margin-top: -50px; /* 첫 섹션과 두 번째 섹션 사이 위치 조정 */
+            margin-bottom: 50px; /* 아래 여백 */
+            transform: translateX(-20%); /* 왼쪽으로 치우침 */
+        }
+
+        .cone {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            clip-path: path("M100,0 A100,100 0 0,1 200,100 L100,200 L0,100 A100,100 0 0,1 100,0 Z");
+            background-image: url('sample.jfif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 첫 번째와 두 번째 섹션 */
+        #home {
+            background: url('ifez.jfif') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #about {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Company Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Company Name</h1>
+        <a href="#mentors" class="btn btn-primary">Explore Our Mentors</a>
+    </section>
+
+    <!-- Cone Decoration -->
+    <div class="cone-wrapper">
+        <div class="cone"></div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to delivering the best services in our industry.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar height adjustment */
+        .navbar {
+            padding: 1.5rem 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            margin: 0 0.8rem; /* Add spacing between nav items */
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0056b3; /* Change to darker blue on hover */
+            transform: scale(1.1); /* Slightly enlarge the text */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Company Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ifez">IFEZ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#roadmap">Road Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" style="background: url('ifez.jfif') no-repeat center center/cover; color: white; text-align: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative;">
+        <h1 style="font-size: 4rem; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">Company Name</h1>
+        <a href="#mentors" style="font-size: 1.2rem; padding: 0.8rem 2rem; background-color: #007bff; border: none; color: white; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); text-decoration: none;">Explore Our Mentors</a>
+    </section>
+
+    <!-- Other Sections -->
+    <section id="about" class="p-5">
+        <div class="container">
+            <img src="https://via.placeholder.com/1200x600" alt="About Us Image" class="img-fluid mb-4">
+            <h2>About Us</h2>
+            <p>We are dedicated to delivering the best services in our industry.</p>
+        </div>
+    </section>
+
+    <section id="ifez" class="p-5 bg-light">
+        <div class="container">
+            <img src="https://via.placeholder.com/1200x600" alt="IFEZ Image" class="img-fluid mb-4">
+            <h2>IFEZ</h2>
+            <p>Incheon Free Economic Zone: A global hub for innovation and growth.</p>
+        </div>
+    </section>
+
+    <section id="team" class="p-5">
+        <div class="container">
+            <img src="https://via.placeholder.com/1200x600" alt="Team Image" class="img-fluid mb-4">
+            <h2>Our Team</h2>
+            <p>Meet the passionate individuals behind our success.</p>
+        </div>
+    </section>
+
+    <section id="roadmap" class="p-5 bg-light">
+        <div class="container">
+            <img src="https://via.placeholder.com/1200x600" alt="Road Map Image" class="img-fluid mb-4">
+            <h2>Road Map</h2>
+            <p>Discover our journey and future plans.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="p-5">
+        <div class="container">
+            <img src="https://via.placeholder.com/1200x600" alt="Contact Us Image" class="img-fluid mb-4">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Get in touch with us today!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-light">
+        <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
